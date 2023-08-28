@@ -1,0 +1,48 @@
+:root {
+  --primary: #172d13;
+  --secondary: #d76f30;
+  --tertiary: #6bb77b;
+  --border: #21411b;
+  --text: #f7e4c2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+/* Heading */
+.header {
+  padding: 20px;
+  background-color: var(--tertiary);
+}
+
+.title {
+  font-size: 60px;
+  text-align: center;
+  background-color: var(--tertiary);
+}
+
+/* Main */
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 400px;
+  height: 400px;
+  border: 5px solid var(--border);
+  margin: 0px auto;
+}
+
+.field {
+  background-color: var(--secondary);
+  width: 132px;
+  height: 132px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+}
