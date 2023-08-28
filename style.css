@@ -1,6 +1,7 @@
 :root {
   --primary: #172d13;
   --secondary: #d76f30;
+  --hover: #c06127;
   --tertiary: #6bb77b;
   --border: #21411b;
   --text: #f7e4c2;
@@ -45,4 +46,8 @@
   cursor: pointer;
   text-align: center;
   font-size: 30px;
+}
+
+.field:hover {
+  background-color: var(--hover);
 }
